@@ -1,0 +1,9 @@
+.PHONY: compile
+compile: dist ## compile
+	@( command -v dist/hello ) \
+	|| $(docker-haskell) ghc -o dist/hello hello.hs
+
+.PHONY: run
+run: ## run
+	@make compile
+	@./dist/hello
