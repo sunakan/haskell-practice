@@ -1,0 +1,13 @@
+= sandbox
+
+.ロード
+----
+$ ghci
+Prelude> :l xxx.hs
+----
+
+.リロード
+----
+*Main> :r
+Ok, one module loaded.
+----

@@ -18,6 +18,14 @@ endef
 dist:
 	mkdir dist
 
+.PHONY: bash
+bash:
+	$(docker-haskell) bash
+
+.PHONY: ghci
+ghci:
+	$(docker-haskell) ghci
+
 .PHONY: clean
 clean:
 	rm -rf dist
